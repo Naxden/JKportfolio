@@ -11,6 +11,7 @@ export default function LineDecorator(properties:ILinearDecorator)
     const [line, setLine] = useState("")
     const  divRef = useRef<HTMLDivElement>(null)
 
+
     useEffect(()=>{
         if(divRef.current){
             const divStyle =  window.getComputedStyle(divRef.current)
@@ -31,7 +32,9 @@ export default function LineDecorator(properties:ILinearDecorator)
     }, [])
 
 
-    
+    const HandleClick = (event :React.MouseEvent<HTMLDivElement>) =>{
+        const div = event.target as ILinearDecorator
+    }
    
 
     
@@ -40,7 +43,7 @@ export default function LineDecorator(properties:ILinearDecorator)
     return(
         <div className='lineDecorator' ref={divRef}>
             <div className='decoratorDiv'>
-                <div className='squareVS'>
+                <div onClick={HandleClick} className='squareVS'>
                     -
                 </div>
                 <pre>

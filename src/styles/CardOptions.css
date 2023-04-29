@@ -9,6 +9,7 @@
     background-color: var(--main-theme-secondary);
     box-shadow: 0 0 10px var(--main-theme-shadow);
     padding: 30px;
+    overflow: hidden;
 }
 
 .runDiv{
@@ -41,4 +42,13 @@
 .optionsButton:hover{
     border: 0.5px solid rgb(101, 99, 99);
     background-color: rgba(142, 138, 138, 0.162);
+}
+
+.line{
+    position: relative;
+    top: 150px;
+    transform: rotate(45deg);
+    width: 50vw;
+    height: 20px;
+    background-color: var(--main-theme-text-function);
 }

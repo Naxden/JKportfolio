@@ -2,7 +2,7 @@
   display: grid;
   flex-direction: column;
   justify-content: space-around;
-  grid-template-columns: 5% 40% 10% 40% 5%;
+  grid-template-columns: 2.5% 45% 0.5% 45% 2.5%;
   width: 100%;
   user-select: none;
 }

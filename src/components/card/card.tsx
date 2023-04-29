@@ -1,6 +1,7 @@
 import {useNavigate} from 'react-router-dom'
 import '../../styles/Card.css'
 import LineDecorator from './decoration'
+import { useEffect } from 'react'
 
 interface ICardProperties {
     imageSource? :string,
@@ -17,16 +18,27 @@ export default function Card({ imageSource, title, description, UID } :ICardProp
 {   
     const navigate = useNavigate()
 
+    const HandleMouseOver = (event :React.MouseEvent<HTMLButtonElement>) => {
+        const btn = event.target as HTMLButtonElement
+        btn.innerText = `LoadGame(${UID})`
+    }
+
+    const HandleMouseLeft = (event :React.MouseEvent<HTMLButtonElement>) => {
+        const btn = event.target as HTMLButtonElement
+        btn.innerText = "LoadGame()"
+    }
+
     const HandleClick = (options:string) =>{
         navigate('/game/', { state: {id:UID}})
     }
+
 
     return(
         <LineDecorator>
             <div className='cardDiv'>
                 <div className='titleDiv'>
                     <span>{`${title}`}</span>
-                    <button onClick={() => HandleClick(UID)}>LoadGame()</button>
+                    <button onMouseOver={HandleMouseOver} onMouseLeave={HandleMouseLeft} className='cardBtn' onClick={() => HandleClick(UID)}>LoadGame()</button>
                 </div>
                 <div className='descriptionDiv border'>
                     <span>{`${description}`}</span>
