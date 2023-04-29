@@ -10,19 +10,21 @@ function App() {
   return (
     <div className="App">
       <div id="AppHeader">
-          <h1>Site contains information about my game projects</h1>
+          <h1>Site contains information about my game projects </h1>
       </div>
       <div id="AppContent">
         <Card 
           imageSource='/images/menu.png'
           title='Tap Champion'
           description={TAP_CHAMPION_DESCRIPTION}
+          UID='tap'
           />
 
       <Card 
           imageSource='/images/veggies.png'
-          title='Tap Champion'
+          title='Find All Vegies'
           description={TAP_CHAMPION_DESCRIPTION}
+          UID='veggies'
           />
       </div>
     </div>

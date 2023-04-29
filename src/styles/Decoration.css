@@ -1,0 +1,37 @@
+.lineDecorator{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--main-theme-text);
+    padding-top: 10%;
+    line-height: 0.96;
+    height: fit-content;
+    
+}
+
+.squareVS{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25px;
+    height: 25px;
+    font-size: 2rem;
+    border: 1px solid var(--main-theme-text);
+    text-align: center;
+}
+
+.squareVS:hover{
+    background-color: #ffffffb3;
+    transform: rotate(-90deg) ;
+    transition: transform 0.5s;
+}
+
+.decoratorDiv{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 100%;
+    width:28px;        
+    user-select: none;               
+}

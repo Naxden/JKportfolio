@@ -1,0 +1,17 @@
+{
+    "title":"Find All Veggies",
+    "github-source":"https://github.com/Naxden/FindAllVeggies",
+    "download-link": "https://play.google.com/store/apps/details?id=com.Gammaelo.FindAllVeggies",
+    "introduction": "This game was created as a project which started in high school and ended in college. <br/> It was inspired by the game Gold Miner and the assumptions were to be the first project that beginners can do and that we would like to play ourselves. <br/>It was created in a team of three where I was one of the two programmers and designers. My main responsibilities were: <br/><ul><li>the sound layer, i.e. music and sound effects</li><li>VeggiePedia made in the image of Pokedex</li><li>inventing and programming the collectibles system, i.e. vegetables that we collect during the game, also worms that we can encounter</li></ul><br/>Due to the work in such a small team, we helped each other a lot. That’s why it’s hard to find code that was written by only one person.",
+    "feature_number": 5,
+    "feature_1_title": "Adversities",
+    "feature_1": "In the project, we struggled with:<br/><ul><li>Optimization, improving the “draw vegetable” process, as well as better adaptation so that it runs smoothly not only in PC editor but also on smartphones.</li><li>Compatibility, UI adjustment so that it works on the whole range of the most popular smartphone resolutions.</li><li> Version control, from the beginning we used Unity version control, but after some time the system was replaced with the new one, which gave us a good reason to start using the Git system.</li></ul> ",
+    "feature_2_title": "Stages",
+    "feature_2": "The game has been divided into stages, each of which is an improved version of the previous one.<br/> The main goal of the game is a enjoyable gameplay in which we collect vegetables spawned randomly (type and position) in each round. Unfortunately, due to the fact that the team members took different life paths, the game never reached its final form.<br/>  Despite the systemic preparation, the lack of artworks blocked relase of stages 4 and 5.",
+    "feature_3_title": "Market",
+    "feature_3": "The market we go to after each round.<br/> We can spend the money earned here in several ways.<br/>We may upgrade to next stage, or buy upgrades that makes our game easier.<br/> In the bottom there are two buttons. One brings us back to gameplay stage. Other takes us to VeggiPedia.",
+    "feature_4_title": "VeggiePedia",
+    "feature_4": "The element for which I was fully responsible.<br/> Player can find here information what vegetables are implemented, their basic informations and how many of them have been collected throughout the game.",
+    "feature_5_title": "Advertisements",
+    "feature_5": "The game is equipped with an ad module. <br/>In the begining my team mate added two kind of ads.<br/> One of them is reward ad that may be shown after game stage if player decides to. <br/> The other one is a regular interstitial ad which appearance is drawn on exiting from market. <br/> In the end I have updated ad module so that it compli the latest Unity standards."
+}
