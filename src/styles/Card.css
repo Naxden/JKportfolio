@@ -42,9 +42,8 @@
     font-family: 'Lato';
     font-size: 2rem;
     border: none;
-    color: var(--main-theme-text);
     margin-right: 2.5%;
-    color: var(--main-theme-text-variable);
+    color: var(--main-theme-text-function);
     transition:  transform 0.5s;
 }
 
@@ -55,7 +54,7 @@
 
 .titleDiv span{
     font-size: 3rem;
-    color: var(--main-theme-text)
+    color: var(--main-theme-text-comment)
 }
 
 .descriptionDiv{

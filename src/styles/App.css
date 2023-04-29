@@ -1,26 +1,29 @@
 .App {
-  display: flex;
+  display: grid;
   flex-direction: column;
   justify-content: space-around;
-  align-items: center;
+  grid-template-columns: 5% 40% 10% 40% 5%;
   width: 100%;
+  user-select: none;
 }
 
 #AppHeader{
-  display: flex;
+  display: grid;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  color: var(--main-theme-text);
+  grid-column: 1/6;
+  width: 98%;
+  color: var(--main-theme-text) !important;
   background-color: var(--main-theme-secondary);
   box-shadow: 0 0 10px var(--main-theme-shadow);
+  grid-template-columns: 10% 20% 20% 20% 20% 10%;
+  padding: 0.5%;
+  margin: 0.5%;
 }
 
 #AppHeader h1{
   font-size: 3rem;
   text-align: justify;
-  padding: 2.5%;
-  color: #3aa184;
   font-weight: 900;
 }
 
@@ -31,4 +34,48 @@
   min-height: 25%;
   width: fit-content;
   margin-bottom: 5%;
+  margin-left: 5%;
+  grid-column: 2;
+}
+
+#AppContentDebug{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  min-height: 25%;
+  width: 100%;
+  margin-bottom: 5%;
+  margin-left: 5%;
+  grid-column: 4;
+}
+
+.vsButton{
+  font-size: 1.5rem;
+  background-color: transparent;
+  border: 0.5px solid transparent;
+  font-family: 'Lato';
+  color: var(--main-theme-text);
+}
+
+
+.vsButton:hover{
+  border: 0.5px solid rgb(101, 99, 99);
+  background-color: rgba(142, 138, 138, 0.162);
+}
+
+.cvButton{
+  grid-column: 2;
+}
+
+
+.linkedInButton{
+  grid-column: 3;
+}
+
+.githubButton{
+  grid-column: 4;
+}
+
+.customzieButton{
+  grid-column: 5;
 }

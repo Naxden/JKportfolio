@@ -26,7 +26,7 @@ export default function Card({ imageSource, title, description, UID } :ICardProp
             <div className='cardDiv'>
                 <div className='titleDiv'>
                     <span>{`${title}`}</span>
-                    <button onClick={() => HandleClick(UID)}>[click here]</button>
+                    <button onClick={() => HandleClick(UID)}>LoadGame()</button>
                 </div>
                 <div className='descriptionDiv border'>
                     <span>{`${description}`}</span>

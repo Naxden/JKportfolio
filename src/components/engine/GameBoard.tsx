@@ -54,26 +54,30 @@ export interface IGameBoard{
 }
 
 
-function PrepareCards (features :StringDictionary, images :StringDictionary) :JSX.Element[] {
+function PrepareCards (features :StringDictionary, images :StringDictionary, isMobile :Boolean) :JSX.Element[] {
     let results : JSX.Element[] = []
 
     if(window.innerWidth > 960){
-        results = CreateCardsForBigScreen(results,features,images)
+        if(isMobile){
+            results = CreateCardsForSmallScreen(results,features,images,isMobile)
+        }
+        
+        results = CreateCardsForBigScreen(results, features, images, isMobile)
     }   
     else{
-        results = CreateCardsForSmallScreen(results,features,images)
+        results = CreateCardsForSmallScreen(results, features, images, isMobile)
     }
 
     return results
 } 
 
-const CreateCardsForBigScreen = (Cards :JSX.Element[], features :StringDictionary, images :StringDictionary) => {
+const CreateCardsForBigScreen = (Cards :JSX.Element[], features :StringDictionary, images :StringDictionary, isMobile :Boolean) => {
     let row = 2
     let column = 2
 
     for(let i = 0; i < features.Size; i++){
         const keyValuePair = features.GetValueOfIndex(i);
-        Cards.push(CreateCard(keyValuePair, images.GetValueOfIndex(i).content, row, column, i))
+        Cards.push(CreateCard(keyValuePair, images.GetValueOfIndex(i).content, row, column, i, isMobile))
 
 
         if(column == 4){
@@ -87,13 +91,13 @@ const CreateCardsForBigScreen = (Cards :JSX.Element[], features :StringDictionar
     return Cards
 }
 
-const CreateCardsForSmallScreen = (Cards :JSX.Element[], features :StringDictionary, images :StringDictionary) => {
+const CreateCardsForSmallScreen = (Cards :JSX.Element[], features :StringDictionary, images :StringDictionary, isMobile :Boolean) => {
     const column  = 2;
     let row = 2;
 
     for(let i = 0; i < features.Size; i++){
         const keyValuePair = features.GetValueOfIndex(i);
-        Cards.push(CreateCard(keyValuePair, images.GetValueOfIndex(i).content, row, column, i))
+        Cards.push(CreateCard(keyValuePair, images.GetValueOfIndex(i).content, row, column, i, isMobile))
         row+=2
     }
 
@@ -101,12 +105,12 @@ const CreateCardsForSmallScreen = (Cards :JSX.Element[], features :StringDiction
 }
 
 
-const CreateCard = (valuePair :KeyValuePairStringDictionary, image :string, rowNumber :number, columnNumber :number, id :number) => {
-    return (<GameCard title={valuePair.title} description={valuePair.content} imageUrl={image} row={rowNumber} column={columnNumber} key={id}/>)
+const CreateCard = (valuePair :KeyValuePairStringDictionary, image :string, rowNumber :number, columnNumber :number, id :number, isMobile :Boolean) => {
+    return (<GameCard title={valuePair.title} description={valuePair.content} imageUrl={image} row={rowNumber} column={columnNumber} key={id} isMobile={isMobile}/>)
 }
 
 export default function GameBoard({introduction, features, images, isMobileGame}:IGameBoard){
-    const [cards, setCards] = useState<JSX.Element[]>(PrepareCards(features, images))
+    const [cards, setCards] = useState<JSX.Element[]>(PrepareCards(features, images, isMobileGame))
     const style :string = isMobileGame ?  'mainBoardMobileGame' : 'mainBoard' 
 
 
