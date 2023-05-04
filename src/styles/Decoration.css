@@ -1,13 +1,19 @@
 .lineDecorator{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 5% 95%;
+    width: 100vw;
+    height: 100%;
+    padding: 2.5%;
     color: var(--main-theme-text);
-    padding-top: 10%;
     line-height: 0.96;
-    height: fit-content;
     
+}
+
+.content{
+    display: flex;
+    grid-columN: 2;
+    width: 100%;
+    height: 100%;
 }
 
 .squareVS{
@@ -33,5 +39,6 @@
     text-align: center;
     height: 100%;
     width:28px;        
-    user-select: none;               
+    user-select: none;    
+    grid-column: 1;           
 }

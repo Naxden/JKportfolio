@@ -1,46 +1,44 @@
 import '../../styles/Decoration.css'
-import React, {useState, useRef, useEffect} from 'react'
+import React, { useState, useRef, useEffect } from 'react'
 
 interface ILinearDecorator {
-     children?: React.ReactNode
-} 
+    children?: React.ReactNode
+}
 
 
-export default function LineDecorator(properties:ILinearDecorator)
-{
+export default function LineDecorator(properties: ILinearDecorator) {
     const [line, setLine] = useState("")
-    const  divRef = useRef<HTMLDivElement>(null)
+    const divRef = useRef<HTMLDivElement>(null)
 
 
-    useEffect(()=>{
-        if(divRef.current){
-            const divStyle =  window.getComputedStyle(divRef.current)
+    useEffect(() => {
+        if (divRef.current) {
+            const divStyle = window.getComputedStyle(divRef.current)
             const fontSize = divStyle.getPropertyValue('font-size')
             const fontSizeInPixels = parseFloat(fontSize)
-            
-            const lineHeight = parseFloat(divStyle.getPropertyValue('height'))
-            const numberOfLines = lineHeight / fontSizeInPixels
+
+            const numberOfLines = divRef.current.offsetHeight / fontSizeInPixels
 
             let str = ""
-            for(let i=0; i<numberOfLines+15;i++)
-            {
+            for (let i = 0; i < numberOfLines+2; i++) {
                 str += "|\n"
             }
 
             setLine(str)
         }
-    }, [])
+    }, [divRef.current?.offsetHeight])
 
+    console.log(divRef.current?.offsetHeight)
 
-    const HandleClick = (event :React.MouseEvent<HTMLDivElement>) =>{
+    const HandleClick = (event: React.MouseEvent<HTMLDivElement>) => {
         const div = event.target as ILinearDecorator
     }
-   
-
-    
 
 
-    return(
+
+
+
+    return (
         <div className='lineDecorator' ref={divRef}>
             <div className='decoratorDiv'>
                 <div onClick={HandleClick} className='squareVS'>
@@ -48,9 +46,11 @@ export default function LineDecorator(properties:ILinearDecorator)
                 </div>
                 <pre>
                     {line}
-                </pre>               
-           </div>
-            {properties.children}
+                </pre>
+            </div>
+            <div className='content'>
+                {properties.children}
+            </div>
         </div>
     )
 }

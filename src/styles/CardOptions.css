@@ -3,7 +3,8 @@
     grid-template-columns: 5% 90% 5%;
     grid-template-rows: 5% 20% 20% 20% 20% 10%;
     max-width: var(--card-theme-width);
-    min-height: 350px;
+    min-height: 250px;
+    max-height: 25vh;
     grid-row-gap: 30px;
     width: 80%;
     background-color: var(--main-theme-secondary);
@@ -29,7 +30,7 @@
 
 .optionsButton{
     display: flex;
-    min-width: 60%;
+    min-width: 50%;
     justify-content: space-around;
     align-items: center;
     font-size: 1.5rem;
@@ -46,7 +47,7 @@
 
 .line{
     position: relative;
-    top: 150px;
+    top: 2.5vw;
     transform: rotate(45deg);
     width: 50vw;
     height: 20px;

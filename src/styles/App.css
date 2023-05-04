@@ -1,8 +1,7 @@
 .App {
-  display: grid;
+  display: flex;
   flex-direction: column;
   justify-content: space-around;
-  grid-template-columns: 2.5% 45% 0.5% 45% 2.5%;
   width: 100%;
   user-select: none;
 }
@@ -31,14 +30,29 @@
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  min-height: 25%;
-  width: fit-content;
+  height: 100%;
+  width: 100vw;
   margin-bottom: 5%;
-  margin-left: 5%;
-  grid-column: 2;
 }
 
-#AppContentDebug{
+#AppIntroduction{
+  display: flex;
+  margin-top: 5vh;
+  height: 80vh;
+  margin-bottom: 5vh;
+}
+
+.section{
+  margin-top: 10vh;
+  display: flex;
+  align-items: center;
+  height: fit-content;
+  width: 100%;
+  justify-content: center;
+  background-color: var(--main-theme-secondary);
+}
+
+/* #AppContentDebug{
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -46,8 +60,7 @@
   width: 100%;
   margin-bottom: 5%;
   margin-left: 5%;
-  grid-column: 4;
-}
+} */
 
 .vsButton{
   font-size: 1.5rem;
@@ -78,4 +91,64 @@
 
 .customzieButton{
   grid-column: 5;
+}
+
+.intro {
+  width: 100vw;
+  height: 80vh;
+  margin-top: 15vh;
+  margin-bottom: 5vh;
+  background-image: linear-gradient(to top, var(--main-theme), var(--main-theme), var(--main-theme-secondary));
+  display: grid;
+  grid-template-columns: 5% 20% 60% 5%;
+  grid-template-rows: 2.5% 15% 75% 7.5%;
+  color: #fff;
+  border-top: 0.5px solid var(--main-theme-shadow);
+}
+
+.introHeader {
+  text-align: center;
+  margin-bottom: 2rem;
+  grid-column: 2;
+  grid-row: 2;
+}
+
+
+.introHeader h1 {
+  font-size: 4rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.introHeader h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.introDescription {
+  padding-top: 5%;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  grid-row: 3;
+  grid-column: 3;
+}
+
+.introDescription p {
+  font-size: 1.2rem;
+  margin-bottom: 0;
+  text-align: justify;
+}
+
+.logo{
+  display: flex;
+  width: 100vw;
+  height: 90vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo img{
+  aspect-ratio: 1/1;
 }
