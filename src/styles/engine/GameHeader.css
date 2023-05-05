@@ -1,0 +1,33 @@
+.headerDiv{
+    display:grid;
+    flex-direction: row;
+    grid-template-columns: 10% 20% 20% 20% 20% 10%;
+    width: 98%;
+    margin: 0.5%;
+    padding: 0.5%;
+    height: 4vh;
+    box-shadow: 0 0 10px var(--main-theme-shadow);
+    background-color: var(--main-theme-secondary);
+}
+
+
+.runDivHeader{
+    grid-column: 2;
+    width: 100%;
+}
+
+.debugDivHeader{
+    grid-column: 3;
+    
+}
+
+.sourceCodeDivHeader{
+    grid-column: 4;
+}
+
+.optionsButtonHeader{
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 1.5rem !important;
+    width: 40%;
+}

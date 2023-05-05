@@ -48,7 +48,7 @@ export default function LineDecorator(properties: ILinearDecorator) {
                     {line}
                 </pre>
             </div>
-            <div className='content'>
+            <div className='contentDiv'>
                 {properties.children}
             </div>
         </div>

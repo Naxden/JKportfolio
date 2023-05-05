@@ -1,43 +1,49 @@
 .cardDiv{
     display: grid;
-    grid-template-columns: 5% 40% 50% 5%;
-    grid-template-rows: 5% 15% 10% 65% 5%;
-    grid-row-gap: 30px;
+    padding-top: 2.5%;
     width: 100%;
     height: 100%;
     background-color: var(--main-theme-secondary);
 }
 
-
-
-
 .imageDiv{
-    box-shadow: 0 -5px 20px -5px black;
-    background-color: var(--main-theme-text-long);
     display: flex;
-    grid-column: 2;
-    grid-row: 2/5;
+    align-items: center;
+    height: 100%;
+    grid-column: 1;
+    grid-row: 2;
     justify-content: center;
 }
 
+.textDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    grid-column: 3;
+    grid-row: 2;
+    height: 100%;
+}
+
 .imageDiv img{
-    max-width: 100%;
-    aspect-ratio: 16/9;
+    height: 100%;
+    box-shadow: 0 0px 22px -5px black;
 }
 
 
 .titleDiv{
     display: flex;
+    align-items: center;
     justify-content: space-between;
     grid-column: 3;
-    grid-row:1;
+    grid-row: 1;
     text-align: start;
 }
 
 .titleDiv button{
     background-color: transparent;
     font-family: 'Lato';
-    font-size: 2rem;
+    padding: 1%;
+    border: 0.5px solid transparent;
     border: none;
     margin-right: 2.5%;
     color: var(--main-theme-text-function);
@@ -47,22 +53,161 @@
 .titleDiv button:hover
 {
     transform: scale(1.1);
+    border: 0.5px solid rgb(101, 99, 99);
+    background-color: rgba(142, 138, 138, 0.162);
 }
 
 .titleDiv span{
-    font-size: 3rem;
-    color: var(--main-theme-text-comment)
+    padding: 1%;
+    color: var(--main-theme-text-comment);
+    border: 0.5px solid transparent;
+}
+
+.titleDiv span:hover{
+    border: 0.5px solid rgb(101, 99, 99);
+    background-color: rgba(142, 138, 138, 0.162);
 }
 
 .descriptionDiv{
     width: 100%;
     grid-column: 3;
-    grid-row:2;
+    grid-row:1;
+    padding: 1%;
+    border: 0.5px solid transparent;
 }
 
-
+.descriptionDiv:hover{
+    border: 0.5px solid rgb(101, 99, 99);
+    background-color: rgba(142, 138, 138, 0.162);
+}
 
 .descriptionDiv span{
     font-size: 1.5rem;
     color: var(--main-theme-text);
+    text-align: justify;
 }
+
+.optionsButton{
+    display: flex;
+    width: 6vw;
+    height: 4vh;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.5rem;
+    background-color: transparent;
+    border: 0.5px solid transparent;
+    font-family: 'Lato';
+    color: var(--main-theme-text);
+}
+
+.optionsButton:hover{
+    border: 0.5px solid rgb(101, 99, 99);
+    background-color: rgba(142, 138, 138, 0.162);
+}
+
+.line{
+    position: relative;
+    top: 2.5vw;
+    transform: rotate(45deg);
+    width: 50vw;
+    height: 20px;
+    background-color: var(--main-theme-text-function);
+}
+
+.optionsDiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    grid-column: 3;
+    grid-row: 1;
+}
+
+.imageDiv img{
+    width: 100%;
+    aspect-ratio: 16/9;
+}
+
+.titleDiv button{
+    font-size: 2rem;
+}
+
+@media screen and (min-width: 1600px) {
+    .cardDiv{
+        grid-template-columns:  40% 10% 40%;
+        grid-template-rows: 5% 50vh ; 
+    }
+
+    .titleDiv button{
+        font-size: 3rem;
+    }
+
+    .titleDiv span{
+        font-size: 4rem;
+    }
+
+    .descriptionDiv span{
+        font-size: 2rem;
+    }
+
+    .optionsButton{
+        font-size: 2.3rem;
+    }
+}
+
+@media screen and (max-width: 1600px) and (min-width: 1250px) {
+    .cardDiv{
+        grid-template-columns:  60% 5% 35%;
+        grid-template-rows: 5% 50vh ; 
+    }
+
+    .titleDiv button{
+        font-size: 1.7rem;
+    }
+
+    .titleDiv span{
+        font-size: 2rem;
+    }
+
+    .descriptionDiv span{
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 1250px)  {
+    .cardDiv{
+        grid-template-columns:  100%;
+        grid-template-rows: 50vh 5vh 50vh; 
+    }
+
+    .titleDiv button{
+        font-size: 1.7rem;
+    }
+
+    .titleDiv span{
+        font-size: 2rem;
+    }
+
+    .descriptionDiv span{
+        font-size: 1.2rem;
+    }
+
+    .imageDiv{
+        grid-column: 1 !important;
+        grid-row: 1;
+    }
+    
+    .textDiv{
+        grid-column: 1 !important;
+        grid-row: 2;
+    }
+    
+}
+
+
+
+/* @media screen and (max-width: 1600px) {
+    .cardDiv{
+        grid-template-columns:  40% 10% 50%;
+        grid-template-rows: 60vh ; 
+    }
+} */

@@ -9,11 +9,12 @@
     
 }
 
-.content{
+.contentDiv{
     display: flex;
     grid-columN: 2;
     width: 100%;
     height: 100%;
+    padding: 0px !important;
 }
 
 .squareVS{
@@ -25,12 +26,12 @@
     font-size: 2rem;
     border: 1px solid var(--main-theme-text);
     text-align: center;
+    transition: transform 0.5s;
 }
 
 .squareVS:hover{
     background-color: #ffffffb3;
     transform: rotate(-90deg) ;
-    transition: transform 0.5s;
 }
 
 .decoratorDiv{

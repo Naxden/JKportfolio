@@ -1,6 +1,7 @@
 import React, {useState,useEffect} from 'react'
 import GameHeader, {IGameHeader} from './GameHeader'
 import GameBoard, {IGameBoard, StringDictionary} from './GameBoard'
+import GameFooter, { IGameFooter } from './GameFooter'
 
 interface IGame {
     UID :string, 
@@ -9,7 +10,8 @@ interface IGame {
 
 interface IGameHTML{
     Header: React.ReactElement<IGameHeader>,
-    GameBoards: React.ReactElement<IGameBoard>
+    GameBoards: React.ReactElement<IGameBoard>,
+    Footer: React.ReactElement<IGameFooter>
 }
 
 export default function Game({UID, isMobileGame}:IGame){
@@ -64,7 +66,8 @@ export default function Game({UID, isMobileGame}:IGame){
         setStructure(
             {
                 Header: await LoadHeader(json),
-                GameBoards: await LoadGameBoard(json, jsonImages)
+                GameBoards: await LoadGameBoard(json, jsonImages),
+                Footer: (<GameFooter/>)
             }
         )
     }
@@ -79,6 +82,9 @@ export default function Game({UID, isMobileGame}:IGame){
             }
             {
                 structure?.GameBoards
+            }
+            {
+                structure?.Footer
             }
         </div>
     )

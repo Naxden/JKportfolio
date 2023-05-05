@@ -1,3 +1,4 @@
+import React from "react"
 import "../../styles/engine/GameCard.css"
 
 interface IGameCard{
@@ -12,6 +13,8 @@ interface IGameCard{
 export default function GameCard({title, description, imageUrl, row, column, isMobile}:IGameCard)
 {
     const style = isMobile ? 'cardMobile' : 'card' 
+    const descriptionSplited = description.split('\n')
+
 
     if(isMobile){
         return(
@@ -22,7 +25,12 @@ export default function GameCard({title, description, imageUrl, row, column, isM
                     {title}
                 </header>
                 <p>
-                    {description}
+                    {descriptionSplited.map((line, index) =>(
+                        <React.Fragment key={index}>
+                            {line}
+                            <br/>
+                        </React.Fragment>
+                    ))}
                 </p>
             </article>
         </section>
@@ -37,9 +45,14 @@ export default function GameCard({title, description, imageUrl, row, column, isM
             <header className="header">
                 {title}
             </header>
-            <p>
-                {description}
-            </p>
+                <p>
+                    {descriptionSplited.map((line, index) =>(
+                        <React.Fragment key={index}>
+                            {line}
+                            <br/>
+                        </React.Fragment>
+                    ))}
+                </p>
         </article>
     </section>
     )
