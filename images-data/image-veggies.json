@@ -1,0 +1,9 @@
+{
+    "main": "/images/veggies.png",
+    "images_number": 5,
+    "images_1": "/images/game-veggies/manu.webp",
+    "images_2": "/images/game-veggies/1.webp&/images/game-veggies/2.webp&/images/game-veggies/3.webp",
+    "images_3": "/images/game-veggies/market.webp",
+    "images_4": "/images/game-veggies/pedia.webp",
+    "images_5": "/images/game-veggies/ad.webp"
+}
