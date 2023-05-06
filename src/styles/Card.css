@@ -15,6 +15,7 @@
     justify-content: center;
 }
 
+
 .textDiv{
     display: flex;
     flex-direction: column;
@@ -89,11 +90,12 @@
 
 .optionsButton{
     display: flex;
-    width: 6vw;
+    width: fit-content;
     height: 4vh;
     justify-content: space-around;
     align-items: center;
     font-size: 1.5rem;
+    padding: 20%;
     background-color: transparent;
     border: 0.5px solid transparent;
     font-family: 'Lato';
@@ -103,6 +105,10 @@
 .optionsButton:hover{
     border: 0.5px solid rgb(101, 99, 99);
     background-color: rgba(142, 138, 138, 0.162);
+}
+
+.optionsButton img{
+    margin-right: 15%;
 }
 
 .line{
@@ -133,71 +139,79 @@
 
 @media screen and (min-width: 1600px) {
     .cardDiv{
-        grid-template-columns:  40% 10% 40%;
+        grid-template-columns:  40% 7.5% 40%;
         grid-template-rows: 5% 50vh ; 
     }
 
     .titleDiv button{
-        font-size: 3rem;
+        font-size: 2rem;
     }
 
     .titleDiv span{
-        font-size: 4rem;
+        font-size: 2.5rem;
     }
 
     .descriptionDiv span{
-        font-size: 2rem;
+        font-size: 1.2rem;
     }
 
     .optionsButton{
+        font-size: 2rem;
+    }
+}
+
+@media screen and (min-width: 1300px) and (max-width: 1600px) {
+    .cardDiv{
+        grid-template-columns:  40% 5% 40%;
+        grid-template-rows: 5% 45vh ; 
+    }
+
+    .titleDiv button{
+        font-size: 1.6rem;
+    }
+
+    .titleDiv span{
         font-size: 2.3rem;
     }
-}
-
-@media screen and (max-width: 1600px) and (min-width: 1250px) {
-    .cardDiv{
-        grid-template-columns:  60% 5% 35%;
-        grid-template-rows: 5% 50vh ; 
-    }
-
-    .titleDiv button{
-        font-size: 1.7rem;
-    }
-
-    .titleDiv span{
-        font-size: 2rem;
-    }
 
     .descriptionDiv span{
-        font-size: 1.2rem;
+        font-size: 1.1rem;
+    }
+
+    .optionsButton{
+        font-size: 1.3rem;
     }
 }
 
-@media screen and (max-width: 1250px)  {
+@media screen and (min-width: 1150px) and (max-width: 1300px)  {
     .cardDiv{
-        grid-template-columns:  100%;
-        grid-template-rows: 50vh 5vh 50vh; 
+        grid-template-columns:  40% 5% 40%;
+        grid-template-rows: 5vh 40vh; 
     }
 
     .titleDiv button{
-        font-size: 1.7rem;
+        font-size: 1.5rem;
     }
 
     .titleDiv span{
-        font-size: 2rem;
+        font-size: 1.7rem;
     }
 
     .descriptionDiv span{
-        font-size: 1.2rem;
+        font-size: 1rem;
+    }
+
+    .optionsButton{
+        font-size: 1.1rem;
     }
 
     .imageDiv{
         grid-column: 1 !important;
-        grid-row: 1;
+        grid-row: 2;
     }
     
     .textDiv{
-        grid-column: 1 !important;
+        grid-column: 3 !important;
         grid-row: 2;
     }
     
@@ -205,9 +219,70 @@
 
 
 
-/* @media screen and (max-width: 1600px) {
+@media screen and (min-width: 600px) and (max-width: 1150px){
     .cardDiv{
-        grid-template-columns:  40% 10% 50%;
-        grid-template-rows: 60vh ; 
+        grid-template-columns:  5% 90% 5%;
+        grid-template-rows: 50vh 5vh 25vh; 
     }
-} */
+
+    .titleDiv button{
+        font-size: 2rem;
+    }
+
+    .titleDiv span{
+        font-size: 2.5rem;
+    }
+
+    .descriptionDiv span{
+        font-size: 1.2rem;
+    }
+
+    .optionsButton{
+        font-size: 0.8rem ;
+    }
+
+    .imageDiv{
+        grid-column: 2 !important;
+        grid-row: 1;
+    }
+    
+    .textDiv{
+        grid-column: 2 !important;
+        grid-row: 3;
+    }
+    
+}
+
+@media screen and (max-width: 600px) {
+    .cardDiv{
+        grid-template-columns:  5% 90% 5%;
+        grid-template-rows: 40vh 5vh 25vh; 
+    }
+
+    .titleDiv button{
+        font-size: 1.2rem;
+    }
+
+    .titleDiv span{
+        font-size: 1.2rem;
+    }
+
+    .descriptionDiv span{
+        font-size: 0.7rem;
+    }
+
+    .optionsButton{
+        font-size: 0.8rem;
+    }
+
+    .imageDiv{
+        grid-column: 2 !important;
+        grid-row: 1;
+    }
+    
+    .textDiv{
+        grid-column: 2 !important;
+        grid-row: 3;
+    }
+    
+}

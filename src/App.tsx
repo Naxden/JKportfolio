@@ -23,7 +23,7 @@ function App() {
       <div className="intro">
         <div className="introHeader">
           <h1>Portfolio
-            <img style={{justifySelf: "center", paddingLeft: "3%", paddingTop: "25%"}} src='/JKportfolio/fonts/icons8-game-controller-64.png' />
+            <img style={{justifySelf: "center", paddingLeft: "5%"}} src='/JKportfolio/fonts/icons8-game-controller-64.png' />
           </h1>
           <h2>Jan Kilar</h2>
         </div>

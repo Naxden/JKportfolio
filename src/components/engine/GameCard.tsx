@@ -14,12 +14,20 @@ export default function GameCard({title, description, imageUrl, row, column, isM
 {
     const style = isMobile ? 'cardMobile' : 'card' 
     const descriptionSplited = description.split('\n')
+    const ampr = /&/
+    let images = null
+    let img :string = imageUrl
+    if(ampr.test(imageUrl)){
+        images = imageUrl.split('&')
+        img = images[0]
+    }
 
+    
 
     if(isMobile){
         return(
             <section className={style} style={{ gridRow: row, gridColumn: column}} >
-            <img src={imageUrl} />
+            <img src={img} />
             <article className="content">
                 <header className="header">
                     {title}
@@ -40,7 +48,7 @@ export default function GameCard({title, description, imageUrl, row, column, isM
 
     return(
     <section className={style} style={{ gridRow: row, gridColumn: column}} >
-        <img src={imageUrl} />
+        <img src={img} />
         <article className="content">
             <header className="header">
                 {title}

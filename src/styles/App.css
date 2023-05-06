@@ -22,7 +22,6 @@
 }
 
 #AppHeader h1{
-  font-size: 3rem;
   text-align: justify;
   font-weight: 900;
 }
@@ -55,18 +54,8 @@
   border: 0.5px solid var(--main-theme-shadow);
 }
 
-/* #AppContentDebug{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  min-height: 25%;
-  width: 100%;
-  margin-bottom: 5%;
-  margin-left: 5%;
-} */
 
 .vsButton{
-  font-size: 1.5rem;
   background-color: transparent;
   border: 0.5px solid transparent;
   font-family: 'Lato';
@@ -104,7 +93,7 @@
   background-image: linear-gradient(to top, var(--main-theme), var(--main-theme), var(--main-theme-secondary));
   display: grid;
   grid-template-columns: 5% 20% 60% 5%;
-  grid-template-rows: 2.5% 20% 70% 7.5%;
+  grid-template-rows: 12.5% 20% 60% 7.5%;
   color: #fff;
   border-top: 0.5px solid var(--main-theme-shadow);
   box-shadow: none;
@@ -119,20 +108,24 @@
 
 
 .introHeader h1 {
-  font-size: 4rem;
+  
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
   font-weight: bold;
   margin-bottom: 1rem;
 }
 
 .introHeader h2 {
-  font-size: 3rem;
+  display: flex;
+  justify-content: center;
   font-weight: bold;
   margin-bottom: 0;
 }
 
 .introDescription {
-  padding-top: 12%;
-  text-align: center;
+  display: flex;
   align-items: center;
   justify-content: center;
   grid-row: 2;
@@ -140,8 +133,8 @@
 }
 
 .introDescription p {
-  font-size: 1.5rem;
   margin-bottom: 0;
+  margin-top: 0;
   text-align: justify;
 }
 
@@ -155,4 +148,114 @@
 
 .logo img{
   aspect-ratio: 1/1;
+}
+
+@media screen and (min-width: 1600px) {
+  .vsButton{
+    font-size: 1.2rem;
+  }
+
+  .introHeader h1 {
+    font-size: 3rem;
+  }
+
+
+  .introHeader h2 {
+    font-size: 2rem;
+  }
+  
+  .introDescription p {
+    font-size: 1.1rem;
+    padding-left: 2.5%;
+  }
+
+  #AppHeader{
+    height: 4vh;
+  }
+}
+
+@media screen and (min-width: 1300px) and (max-width: 1600px){
+  .vsButton{
+    font-size: 1rem;
+  }
+
+  .introHeader h1 {
+    font-size: 2.5rem;
+  }
+
+  .introHeader h2 {
+    font-size: 1.5rem;
+  }
+  
+  .introDescription p {
+    font-size: 1rem;
+    padding-left: 2.5%;
+  }
+
+  #AppHeader{
+    height: 4vh;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 1300px){
+  .vsButton{
+    font-size: 1rem;
+  }
+
+  .introHeader h1 {
+    font-size: 2rem;
+  }
+
+  .introHeader h2 {
+    font-size: 1.4rem;
+  }
+  
+  .introDescription p {
+    font-size: 0.9rem;
+    padding-left: 80px;
+  }
+
+  #AppHeader{
+    height: 4vh;
+  }
+  
+}
+
+@media screen and (max-width: 600px){
+  .vsButton{
+    font-size: 1.2rem;
+  }
+
+  .introHeader h1 {
+    font-size: 2.5rem;
+  }
+
+  .introHeader h2 {
+    font-size: 1.5rem;
+  }
+  
+  .introDescription p {
+    font-size: 1.1rem;
+    padding:15% 10%;
+  }
+
+  #AppHeader{
+    height: 4vh;
+  }
+
+  .intro {
+    grid-template-columns: 5% 90% 5%;
+    grid-template-rows: 5% 15% 40%;
+  }
+
+  .introHeader{
+    grid-column: 2 !important;
+    grid-row: 2 !important;
+  }
+
+  .introDescription{
+    align-self: start;
+    grid-column: 2 !important;
+    grid-row: 3 !important;
+  }
 }

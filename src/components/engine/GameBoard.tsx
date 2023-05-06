@@ -1,6 +1,7 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import '../../styles/engine/GameBoard.css'
 import GameCard from './GameCard'
+import React from 'react'
 
 export class StringDictionary {
     private Key :Array<string>
@@ -61,8 +62,9 @@ function PrepareCards (features :StringDictionary, images :StringDictionary, isM
         if(isMobile){
             results = CreateCardsForSmallScreen(results,features,images,isMobile)
         }
-        
-        results = CreateCardsForBigScreen(results, features, images, isMobile)
+        else{
+            results = CreateCardsForBigScreen(results, features, images, isMobile)
+        }
     }   
     else{
         results = CreateCardsForSmallScreen(results, features, images, isMobile)
@@ -105,6 +107,8 @@ const CreateCardsForSmallScreen = (Cards :JSX.Element[], features :StringDiction
 }
 
 
+
+
 const CreateCard = (valuePair :KeyValuePairStringDictionary, image :string, rowNumber :number, columnNumber :number, id :number, isMobile :Boolean) => {
     return (<GameCard title={valuePair.title} description={valuePair.content} imageUrl={image} row={rowNumber} column={columnNumber} key={id} isMobile={isMobile}/>)
 }
@@ -113,10 +117,12 @@ export default function GameBoard({introduction, features, images, isMobileGame}
     const [cards, setCards] = useState<JSX.Element[]>(PrepareCards(features, images, isMobileGame))
     const style :string = isMobileGame ?  'mainBoardMobileGame' : 'mainBoard' 
 
-
+   
     return(
         <div className={style}>
             {cards}
         </div>
     )
 }
+
+

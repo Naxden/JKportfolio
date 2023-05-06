@@ -37,7 +37,7 @@
     display: flex;
     background-color: #191919;
     border-radius: 10px;
-    height: 100%;
+    height: fit-content;
     width: 100%;
     color: #effbff;
 }
@@ -67,4 +67,205 @@
     font-size: 1.6rem;
     margin-top: 2.5%;
     width: 80%;
+}
+
+
+@media screen and (min-width: 1600px) {
+.header{
+    font-size: 2.8rem;
+}
+
+
+.content p{
+    font-size: 1.2rem;
+}
+
+
+.cardMobile .header{
+    font-size: 2.2rem;
+}
+
+
+
+.cardMobile .content p{
+    font-size: 1.1rem;
+}
+}
+
+@media screen and (min-width: 1300px) and (max-width: 1600px) {
+    .header{
+        font-size: 2.6rem;
+    }
+    
+    
+    .content p{
+        font-size: 1rem;
+    }
+    
+    
+    .cardMobile .header{
+        font-size: 2rem;
+    }
+    
+    .cardMobile .content p{
+        font-size: 1rem;
+    }
+
+    .cardMobile img {
+        width: 90% !important;
+    }
+}
+
+@media screen and (min-width: 1150px) and (max-width: 1300px)  {
+    .header{
+        font-size: 2.4rem;
+    }
+    
+    
+    .content p{
+        font-size: 0.8rem;
+    }
+    
+    .cardMobile{
+        height: fit-content;
+    }
+    
+    .cardMobile .header{
+        font-size: 1.8rem;
+    }
+    
+    .cardMobile .content p{
+        font-size: 0.9rem;
+    }
+
+    .cardMobile img {
+        width: 80% !important;
+    }
+    
+}
+
+
+
+@media screen and (min-width: 1000px) and (max-width: 1150px){
+ .header{
+    font-size: 2rem;
+}
+
+
+.content p{
+    font-size: 0.8rem;
+}
+
+.cardMobile .header{
+    font-size: 2rem;
+}
+
+
+.cardMobile .content p{
+    font-size: 0.9rem;
+}
+    
+.cardMobile img {
+    width: 80% !important;
+}
+}
+
+
+@media screen and (min-width: 600px) and (max-width: 1000px){
+    .header{
+       font-size: 2.6rem;
+   }
+   
+   
+   .content p{
+       font-size: 1rem;
+   }
+   
+   .cardMobile .header{
+       font-size: 2rem;
+   }
+   
+   
+   .cardMobile .content p{
+       font-size: 0.9rem;
+   }
+       
+   .cardMobile img {
+       width: 80% !important;
+   }
+   }
+
+@media screen and (min-width: 450px) and (max-width: 600px) {
+    .header{
+        font-size: 2rem;
+    }
+    
+    
+    .content p{
+        font-size: 0.8rem;
+    }
+    
+    
+    .cardMobile .header{
+        font-size: 1.4rem;
+    }
+    
+    .cardMobile .content p{
+        font-size: 0.6rem;
+    }
+
+    .cardMobile img {
+        width: 95% !important;
+    }
+        
+}
+
+@media screen and (min-width: 300px) and (max-width: 450px) {
+    .header{
+        font-size: 3rem;
+    }
+    
+    
+    .content p{
+        font-size: 1.4rem;
+    }
+    
+    
+    .cardMobile .header{
+        font-size: 1.4rem;
+    }
+    
+    .cardMobile .content p{
+        font-size: 0.45rem;
+    }
+
+    .cardMobile img {
+        width: 95% !important;
+    }
+        
+}
+
+@media screen and (max-width: 300px) {
+    .header{
+        font-size: 3rem;
+    }
+    
+    
+    .content p{
+        font-size: 1.4rem;
+    }
+    
+    
+    .cardMobile .header{
+        font-size: 1.4rem;
+    }
+    
+    .cardMobile .content p{
+        font-size: 0.4rem;
+    }
+
+    .cardMobile img {
+        width: 85% !important;
+    }
+        
 }
