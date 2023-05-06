@@ -18,12 +18,12 @@ function App() {
           <button className="customzieButton vsButton">Customize</button>
       </div>
       <div className='logo'>
-        <img src="/fonts/logo.png" alt="Pac-Man"/>
+        <img src="/JKportfolio/fonts/logo.png" alt="Pac-Man"/>
       </div>
       <div className="intro">
         <div className="introHeader">
           <h1>Portfolio
-            <img style={{justifySelf: "center", paddingLeft: "3%", paddingTop: "25%"}} src='/fonts/icons8-game-controller-64.png' />
+            <img style={{justifySelf: "center", paddingLeft: "3%", paddingTop: "25%"}} src='/JKportfolio/fonts/icons8-game-controller-64.png' />
           </h1>
           <h2>Jan Kilar</h2>
         </div>
@@ -35,7 +35,7 @@ function App() {
       <div id="AppContent">
         <div className='section'>
           <Card
-            imageSource='/images/menu.png'
+            imageSource='/JKportfolio/images/menu.png'
             title='Tap Champion'
             description={TAP_CHAMPION_DESCRIPTION}
             UID='tap'
@@ -43,7 +43,7 @@ function App() {
         </div>
         <div className='section'>
           <Card
-            imageSource='/images/veggies.png'
+            imageSource='/JKportfolio/images/veggies.png'
             title='Find All Vegies'
             description={TAP_CHAMPION_DESCRIPTION}
             UID='veggies'

@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes , Route } from 'react-router-dom'
 import ReactDOM from 'react-dom/client';
 import './styles/index.css';
 import App from './App';
@@ -10,12 +10,12 @@ const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
-  <BrowserRouter>
-    <Routes>
-      <Route path="/" element={<App />}/>
-      <Route path="/game/" element={<GamePage />}/>:
+  <Router>
+    <Routes >
+      <Route path="/JKportfolio/" element={<App />}/>
+      <Route path="/JKportfolio/game" element={<GamePage />}/>
     </Routes>
-  </BrowserRouter>
+  </Router>
 );
 
 reportWebVitals();

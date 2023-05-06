@@ -29,7 +29,7 @@ export default function Card({ imageSource, title, description, UID } :ICardProp
     }
 
     const HandleClick = (options:string) =>{
-        navigate('/game/', { state: {id:UID}})
+        navigate('./game/', { state: {id:UID}})
     }
 
 
@@ -47,19 +47,19 @@ export default function Card({ imageSource, title, description, UID } :ICardProp
                     <div className='optionsDiv'>
                         <div className="runDiv">
                             <button className="optionsButton">
-                                <img src="/fonts/icons8-play-30.png"/>
+                                <img src="/JKportfolio/fonts/icons8-play-30.png"/>
                                 {UID}
                             </button>
                         </div>
                         <div className="debugDiv">
                             <button className="optionsButton">
-                                <img src="/fonts/icons8-bug-30.png"/>
+                                <img src="/JKportfolio/fonts/icons8-bug-30.png"/>
                                 {UID}
                             </button>
                         </div>
                         <div className="sourceCodeDiv">
                             <button className="optionsButton">
-                                <img src="/fonts/icons8-source-code-50.png"/>
+                                <img src="/JKportfolio/fonts/icons8-source-code-50.png"/>
                                 {UID}
                             </button>
                         </div>

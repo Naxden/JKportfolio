@@ -57,10 +57,10 @@ export default function Game({UID, isMobileGame}:IGame){
 
     // Data loading
     const GetData = async (ID:string) => {
-        const response = await fetch(`/data/game-${ID}.json`)
+        const response = await fetch(`/JKportfolio/data/game-${ID}.json`)
         const json = await response.json()
 
-        const responseImages = await fetch(`/images-data/image-${ID}.json`)
+        const responseImages = await fetch(`/JKportfolio/images-data/image-${ID}.json`)
         const jsonImages = await responseImages.json()
 
         setStructure(
