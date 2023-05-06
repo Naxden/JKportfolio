@@ -58,6 +58,7 @@ export interface IGameBoard{
 function PrepareCards (features :StringDictionary, images :StringDictionary, isMobile :Boolean) :JSX.Element[] {
     let results : JSX.Element[] = []
 
+    
     if(window.innerWidth > 960){
         if(isMobile){
             results = CreateCardsForSmallScreen(results,features,images,isMobile)

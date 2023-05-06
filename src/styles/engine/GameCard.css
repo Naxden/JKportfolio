@@ -173,12 +173,12 @@
 
 @media screen and (min-width: 600px) and (max-width: 1000px){
     .header{
-       font-size: 2.6rem;
+       font-size: 1.8rem;
    }
    
    
    .content p{
-       font-size: 1rem;
+       font-size: 0.7rem;
    }
    
    .cardMobile .header{
@@ -197,12 +197,12 @@
 
 @media screen and (min-width: 450px) and (max-width: 600px) {
     .header{
-        font-size: 2rem;
+        font-size: 1.6rem;
     }
     
     
     .content p{
-        font-size: 0.8rem;
+        font-size: 0.6rem;
     }
     
     
@@ -222,12 +222,12 @@
 
 @media screen and (min-width: 300px) and (max-width: 450px) {
     .header{
-        font-size: 3rem;
+        font-size: 1.5rem;
     }
     
     
     .content p{
-        font-size: 1.4rem;
+        font-size: 0.4rem;
     }
     
     

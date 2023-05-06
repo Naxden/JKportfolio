@@ -255,20 +255,20 @@
 
 @media screen and (max-width: 600px) {
     .cardDiv{
-        grid-template-columns:  5% 90% 5%;
-        grid-template-rows: 40vh 5vh 25vh; 
+        grid-template-columns:  5% 80% 5%;
+        grid-template-rows: 30vh 5vh 25vh; 
     }
 
     .titleDiv button{
-        font-size: 1.2rem;
+        font-size: 1.1rem;
     }
 
     .titleDiv span{
-        font-size: 1.2rem;
+        font-size: 1.1rem;
     }
 
     .descriptionDiv span{
-        font-size: 0.7rem;
+        font-size: 0.5rem;
     }
 
     .optionsButton{

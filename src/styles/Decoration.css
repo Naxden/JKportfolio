@@ -43,3 +43,11 @@
     user-select: none;    
     grid-column: 1;           
 }
+
+@media screen and (max-width: 600px) {
+    .lineDecorator{
+        grid-template-columns: 10% 90%;
+    }
+    
+    
+}
