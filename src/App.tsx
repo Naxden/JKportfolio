@@ -7,6 +7,7 @@ import GameFooter from './components/engine/GameFooter';
 
 const TAP_CHAMPION_DESCRIPTION = 'My Github with source code files Introduction Tap Champion is my clone of “Guitar Hero” mixed with “Osu!” and “Genshin Impact”s event-mini game.The project is designed and coded entirely by myself. I want to focus on usability andthe backend side of it.In the future I plan to work on the general appearance and aesthetics (UI,… '
 
+const VEGGIES_DESCRIPTION = "Mobile arcade game Authors: Jan Kilar Jakub Kurc Adrian Sarna"
 
 function App() {
   return (
@@ -15,7 +16,6 @@ function App() {
           <button className="cvButton vsButton">CV</button>
           <button className="linkedInButton vsButton">LinkedIn</button>
           <button className="githubButton vsButton">GitHub</button>
-          <button className="customzieButton vsButton">Customize</button>
       </div>
       <div className='logo'>
         <img src="/JKportfolio/fonts/logo.png" alt="Pac-Man"/>
@@ -39,14 +39,18 @@ function App() {
             title='Tap Champion'
             description={TAP_CHAMPION_DESCRIPTION}
             UID='tap'
+            linkSource='https://github.com/Naxden/TapChampion/tree/master'
+            linkToRun=''
           />
         </div>
         <div className='section'>
           <Card
             imageSource='/JKportfolio/images/veggies.png'
             title='Find All Vegies'
-            description={TAP_CHAMPION_DESCRIPTION}
+            description={VEGGIES_DESCRIPTION}
             UID='veggies'
+            linkSource='https://github.com/Naxden/FindAllVeggies'
+            linkToRun='https://play.google.com/store/apps/details?id=com.Gammaelo.FindAllVeggies'
           />
         </div>
         <GameFooter/>

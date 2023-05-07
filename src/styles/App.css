@@ -16,7 +16,7 @@
   color: var(--main-theme-text) !important;
   background-color: var(--main-theme-secondary);
   box-shadow: 0 0 10px var(--main-theme-shadow);
-  grid-template-columns: 10% 20% 20% 20% 20% 10%;
+  grid-template-columns: 10% 23% 23% 23%  10%;
   padding: 0.5%;
   margin: 0.5%;
 }
@@ -81,9 +81,7 @@
   grid-column: 4;
 }
 
-.customzieButton{
-  grid-column: 5;
-}
+
 
 .intro {
   width: 100vw;

@@ -7,16 +7,32 @@ interface ICardProperties {
     imageSource? :string,
     title? :string,
     description? :string,
-    UID:string
+    UID:string,
+    linkSource: string,
+    linkToRun: string
 }
 
 interface IGameID{
     id:string
 }
 
-export default function Card({ imageSource, title, description, UID } :ICardProperties)
+export default function Card({ imageSource, title, description, UID, linkSource,linkToRun } :ICardProperties)
 {   
     const navigate = useNavigate()
+
+    const HandleSourceClick = () =>{
+        const link = document.createElement('a');
+        link.href = linkSource;
+        link.target = '_blank';
+        link.click();
+    }
+    const HandleRunClick = () =>{
+        const link = document.createElement('a');
+        link.href = linkToRun;
+        link.target = '_blank';
+        link.click();
+    }
+   
 
     const HandleMouseOver = (event :React.MouseEvent<HTMLButtonElement>) => {
         const btn = event.target as HTMLButtonElement
@@ -45,20 +61,14 @@ export default function Card({ imageSource, title, description, UID } :ICardProp
                         <span>{`${description}`}</span>
                     </div>
                     <div className='optionsDiv'>
-                        <div className="runDiv">
-                            <button className="optionsButton">
+                        <div className="runDiv"  style={{gridColumn: 2}}>
+                            <button className="optionsButton" onClick={HandleRunClick}>
                                 <img src="/JKportfolio/fonts/icons8-play-30.png"/>
                                 {UID}
                             </button>
                         </div>
-                        <div className="debugDiv">
-                            <button className="optionsButton">
-                                <img src="/JKportfolio/fonts/icons8-bug-30.png"/>
-                                {UID}
-                            </button>
-                        </div>
-                        <div className="sourceCodeDiv">
-                            <button className="optionsButton">
+                        <div className="sourceCodeDiv" style={{gridColumn: 4}}>
+                            <button className="optionsButton"  onClick={HandleSourceClick}>
                                 <img src="/JKportfolio/fonts/icons8-source-code-50.png"/>
                                 {UID}
                             </button>

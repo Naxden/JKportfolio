@@ -89,7 +89,6 @@
     justify-content: space-around;
     align-items: center;
     font-size: 1.5rem;
-    padding: 20%;
     background-color: transparent;
     border: 0.5px solid transparent;
     font-family: 'Lato';
@@ -115,12 +114,16 @@
 }
 
 .optionsDiv{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 0% 20% 15% 20% 25%;
     grid-column: 3;
     grid-row: 1;
 }
+
+.optionsDiv button{
+    padding: 20%;
+}
+
 
 .imageDiv img{
     width: 100%;

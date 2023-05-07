@@ -23,7 +23,7 @@ export default function Game({UID, isMobileGame}:IGame){
     },[])
 
     const LoadHeader = async (json:any) => {
-        const header = (<GameHeader title={json.title} github='' />)
+        const header = (<GameHeader title={json.title} github={json["github-source"]} runLink={json["download-link"]}/>)
         return header;
     }
 
@@ -52,6 +52,8 @@ export default function Game({UID, isMobileGame}:IGame){
             features={featuresContent}
             images={imagesUrls}
             isMobileGame={isMobileGame}
+            json={json}
+            jsonImages={jsonImages}
         />)
     } 
 
