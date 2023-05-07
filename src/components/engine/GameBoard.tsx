@@ -59,17 +59,14 @@ function PrepareCards (features :StringDictionary, images :StringDictionary, isM
     let results : JSX.Element[] = []
 
     
-    if(window.innerWidth > 960){
-        if(isMobile){
-            results = CreateCardsForSmallScreen(results,features,images,isMobile)
-        }
-        else{
-            results = CreateCardsForBigScreen(results, features, images, isMobile)
-        }
-    }   
-    else{
-        results = CreateCardsForSmallScreen(results, features, images, isMobile)
+   
+    if(isMobile){
+        results = CreateCardsForSmallScreen(results,features,images,isMobile)
     }
+    else{
+        results = CreateCardsForBigScreen(results, features, images, isMobile)
+    }
+   
 
     return results
 } 

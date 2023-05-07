@@ -31,3 +31,24 @@
     width: 40%;
     padding: 0;
 }
+
+@media screen and (min-width: 300px) and (max-width: 1150px) {
+    .headerDiv{
+        grid-template-columns: 5% 30% 30% 30% 5%;
+    }
+
+    .optionsButtonHeader{
+        font-size: 0.7rem !important;
+    }
+}
+
+@media screen and (max-width: 300px){
+    .headerDiv{
+      
+        grid-template-columns: 5% 30% 30% 30% 5%;
+    }
+
+    .optionsButtonHeader{
+        font-size: 0.5rem !important;
+    }
+}

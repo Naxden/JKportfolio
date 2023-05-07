@@ -12,7 +12,7 @@ function App() {
   return (
     <div className="App">
       <div id="AppHeader">
-          <button className="cvButton vsButton">Cv</button>
+          <button className="cvButton vsButton">CV</button>
           <button className="linkedInButton vsButton">LinkedIn</button>
           <button className="githubButton vsButton">GitHub</button>
           <button className="customzieButton vsButton">Customize</button>

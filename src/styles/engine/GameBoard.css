@@ -3,7 +3,7 @@
         display: grid;
         width: 100%;
         height: 100%;
-        grid-template-columns: 5% 40% 5% 40% 5%;
+        grid-template-columns: 1% 44% 5% 44% 1%;
         grid-auto-rows: 10vh auto;
     }
 
