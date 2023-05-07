@@ -17,7 +17,6 @@
 }
 
 .header{
-    font-size: 3rem;
     margin-top: 0;
     color: #4cc696;
 }
@@ -72,23 +71,23 @@
 
 @media screen and (min-width: 1600px) {
 .header{
-    font-size: 2.8rem;
+    font-size: 2.4rem;
 }
 
 
 .content p{
-    font-size: 1.2rem;
+    font-size: 1.3rem;
 }
 
 
 .cardMobile .header{
-    font-size: 2.2rem;
+    font-size: 2.4rem;
 }
 
 
 
 .cardMobile .content p{
-    font-size: 1.1rem;
+    font-size: 1.3rem;
 }
 }
 
@@ -147,53 +146,55 @@
 
 
 @media screen and (min-width: 1000px) and (max-width: 1150px){
- .header{
-    font-size: 2rem;
-}
+    .header{
+        font-size: 2rem;
+    }
 
 
-.content p{
-    font-size: 0.8rem;
-}
+    .content p{
+        font-size: 0.8rem;
+    }
 
-.cardMobile .header{
-    font-size: 2rem;
-}
+    .cardMobile .header{
+        font-size: 2rem;
+    }
 
 
-.cardMobile .content p{
-    font-size: 0.9rem;
-}
-    
-.cardMobile img {
-    width: 80% !important;
-}
+    .cardMobile .content p{
+        font-size: 0.9rem;
+    }
+        
+    .cardMobile img {
+        width: 80% !important;
+    }
 }
 
 
 @media screen and (min-width: 600px) and (max-width: 1000px){
     .header{
-       font-size: 1.8rem;
+       font-size: 1.6rem;
    }
-   
    
    .content p{
        font-size: 0.7rem;
    }
    
    .cardMobile .header{
-       font-size: 2rem;
-   }
-   
+       font-size: 1.6rem;
+   }   
    
    .cardMobile .content p{
-       font-size: 0.9rem;
+       font-size: 0.7rem;
    }
        
    .cardMobile img {
-       width: 80% !important;
+       width: 60% !important;
    }
-   }
+
+   .cardMobile .content p{
+        width: 100%;
+    }
+}
 
 @media screen and (min-width: 450px) and (max-width: 600px) {
     .header{
@@ -215,9 +216,12 @@
     }
 
     .cardMobile img {
-        width: 95% !important;
+        width: 60% !important;
     }
         
+    .cardMobile .content p{
+        width: 100%;
+    }
 }
 
 @media screen and (min-width: 300px) and (max-width: 450px) {
@@ -232,7 +236,7 @@
     
     
     .cardMobile .header{
-        font-size: 1.4rem;
+        font-size: 1.3rem;
     }
     
     .cardMobile .content p{
@@ -240,14 +244,18 @@
     }
 
     .cardMobile img {
-        width: 95% !important;
+        width: 55% !important;
+    }
+        
+    .cardMobile .content p{
+        width: 100%;
     }
         
 }
 
 @media screen and (max-width: 300px) {
     .header{
-        font-size: 0.8rem;
+        font-size: 0.7rem;
     }
     
     
@@ -265,7 +273,10 @@
     }
 
     .cardMobile img {
-        width: 75% !important;
+        width: 55% !important;
     }
-        
+   
+    .cardMobile .content p{
+        width: 100%;
+    }
 }

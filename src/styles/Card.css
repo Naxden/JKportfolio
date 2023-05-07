@@ -64,10 +64,7 @@
     border: 0.5px solid transparent;
 }
 
-.titleDiv span:hover{
-    border: 0.5px solid rgb(101, 99, 99);
-    background-color: rgba(142, 138, 138, 0.162);
-}
+
 
 .descriptionDiv{
     width: 100%;
@@ -77,10 +74,7 @@
     border: 0.5px solid transparent;
 }
 
-.descriptionDiv:hover{
-    border: 0.5px solid rgb(101, 99, 99);
-    background-color: rgba(142, 138, 138, 0.162);
-}
+
 
 .descriptionDiv span{
     font-size: 1.5rem;
