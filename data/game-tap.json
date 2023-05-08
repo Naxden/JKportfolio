@@ -2,7 +2,7 @@
     "title":"Tap Champion",
     "githubSource":"https://github.com/Naxden/TapChampion/tree/master",
     "download-link": "",
-    "introduction": "Tap Champion is my clone of “Guitar Hero” mixed with “Osu!” and “Genshin Impact”s event-mini game. The project is designed and coded entirely by myself. I want to focus on usability and the backend side of it. In the future I plan to work on the general appearance and aesthetics (UI, Animations, Shaders). Since Tap Champion is still in development, this post will also be changing. I have built whole songs system or actually “.tapch” files, which is my way of storing and sharing song files. This file stores information about:\n - the actual sound track, the only extension that my game supports is “.mp3” the background image of the song, the extensions “.png” or “.jpg” are opreated NoteFile, which has basic information and note maps divided into 3 difficulty levels The notes are devided into short and long ntoes, which are distinguished by the time the key is pressed.",
+    "introduction": "Tap Champion is my clone of “Guitar Hero” mixed with “Osu!” and “Genshin Impact”s event-mini game. The project is designed and coded entirely by myself. I want to focus on usability and the backend side of it. In the future I plan to work on the general appearance and aesthetics (UI, Animations, Shaders).<br/> Since Tap Champion is still in development, this post will also be changing.<br/> I have built whole songs system or actually “.tapch” files, which is my way of storing and sharing song files. This file stores information about:<ul> <li>the actual sound track, the only extension that my game supports is “.mp3”</li> <li>the background image of the song, the extensions “.png” or “.jpg” are opreated</li> <li>NoteFile, which has basic information and note maps divided into 3 difficulty levels</li> <li>The notes are devided into short and long ntoes, which are distinguished by the time the key is pressed.</li></ul>",
     "feature_number": 5,
     "feature_1_title": "Main menu",
     "feature_1": "A simple menu with a few key options, such as choosing whether the player wants to play, record, or import songs from a “.tapch” file. Songs to import should be in “Download” folder and then they while be placed in “Songs” folder.",
@@ -12,6 +12,6 @@
     "feature_3": "The stage where the saved songs are loaded, from which the player can select the ones he wants to play.\n I programmed the option to create a queue, or playlist instead of plating just one.\n Clicking of song results in playing short demo of it.",
     "feature_4_title": "Game",
     "feature_4": "The player can play a previously selected song. I tried to mimic Genishin’s approach of design. However I prefer Guitar Hero’s gameplay, so I did my best to apply that one. As the player hits the notes, the multiplier increases rewarding the player with more points.The multiplier resets when the player fails to hit a note or when he presses a button even though there is no note on it. At the end player’s scores is updated and saved to played song.",
-    "feature_5_title": "Market",
+    "feature_5_title": "Settings",
     "feature_5": "Multi level overlay, where player can:\n -change key binds\n -select the difficulty\n -change the lag offset\n"
 }
