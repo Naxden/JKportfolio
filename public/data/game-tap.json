@@ -12,6 +12,6 @@
     "feature_3": "The stage where the saved songs are loaded, from which the player can select the ones he wants to play.\n I programmed the option to create a queue, or playlist instead of plating just one.\n Clicking of song results in playing short demo of it.",
     "feature_4_title": "Game",
     "feature_4": "The player can play a previously selected song. I tried to mimic Genishin’s approach of design. However I prefer Guitar Hero’s gameplay, so I did my best to apply that one. As the player hits the notes, the multiplier increases rewarding the player with more points.The multiplier resets when the player fails to hit a note or when he presses a button even though there is no note on it. At the end player’s scores is updated and saved to played song.",
-    "feature_5_title": "Market",
+    "feature_5_title": "Settings",
     "feature_5": "Multi level overlay, where player can:\n -change key binds\n -select the difficulty\n -change the lag offset\n"
 }

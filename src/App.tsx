@@ -5,9 +5,9 @@ import Card from './components/card/card'
 import CardOptions from './components/card/cardOptions'
 import GameFooter from './components/engine/GameFooter';
 
-const TAP_CHAMPION_DESCRIPTION = 'My Github with source code files Introduction Tap Champion is my clone of “Guitar Hero” mixed with “Osu!” and “Genshin Impact”s event-mini game.The project is designed and coded entirely by myself. I want to focus on usability andthe backend side of it.In the future I plan to work on the general appearance and aesthetics (UI,… '
+const TAP_CHAMPION_DESCRIPTION = 'PC music game'
 
-const VEGGIES_DESCRIPTION = "Mobile arcade game Authors: Jan Kilar Jakub Kurc Adrian Sarna"
+const VEGGIES_DESCRIPTION = "Mobile arcade game. Authors: Jan Kilar, Jakub Kurc, Adrian Sarna"
 
 function App() {
   return (
@@ -35,7 +35,7 @@ function App() {
       <div id="AppContent">
         <div className='section'>
           <Card
-            imageSource='/JKportfolio/images/menu.png'
+            imageSource='/JKportfolio/images/tap.png'
             title='Tap Champion'
             description={TAP_CHAMPION_DESCRIPTION}
             UID='tap'
