@@ -60,7 +60,7 @@ export interface IGameBoard{
 function PrepareCards (features :StringDictionary, images :StringDictionary, isMobile :Boolean, json :any, jsonImages :any) :JSX.Element[] {
     let results : JSX.Element[] = []
 
-    results.push(<GameCard title="Introduction" description={json["introduction"]} imageUrl={jsonImages["main"]} row={2} column={2} key={Math.floor(Math.random() * 100+ (json["feature_number"])+ 1)} isMobile={isMobile}/>)
+    results.push(<GameCard  title="Introduction" description={json["introduction"]} imageUrl={jsonImages["main"]} row={2} column={2} key={Math.floor(Math.random() * 100+ (json["feature_number"])+ 1)} isMobile={isMobile}/>)
     if(isMobile){
         
         results = CreateCardsForSmallScreen(results,features,images,isMobile)

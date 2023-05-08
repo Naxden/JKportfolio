@@ -22,12 +22,12 @@ export default function GameCard({title, description, imageUrl, row, column, isM
         img = images[0]
     }
 
-    
+
 
     if(isMobile){
         return(
             <section className={style} style={{ gridRow: row, gridColumn: column}} >
-            <img src={img} />
+            {( img !== "" && <img src={img}  />)}
             <article className="content">
                 <header className="header">
                     {title}
