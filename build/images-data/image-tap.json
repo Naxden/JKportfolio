@@ -1,9 +1,9 @@
 {
-    "main": "/JKportfolio/images/game-tap/main-1.webp",
+    "main": "/JKportfolio/images/game-tap/main-1.png",
     "images_number": 5,
-    "images_1": "/JKportfolio/images/game-tap/menu.webp",
+    "images_1": "/JKportfolio/images/game-tap/menu.png",
     "images_2": "/JKportfolio/images/game-tap/recording-1.webp",
     "images_3": "/JKportfolio/images/game-tap/songselect-1.webp",
     "images_4": "/JKportfolio/images/game-tap/game-1.webp",
-    "images_5": "/JKportfolio/images/game-tap/settings-2.webp"
+    "images_5": "/JKportfolio/images/game-tap/settings-2.png"
 }
