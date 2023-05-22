@@ -4,18 +4,38 @@ import './styles/App.css';
 import Card from './components/card/card'
 import CardOptions from './components/card/cardOptions'
 import GameFooter from './components/engine/GameFooter';
+import { useNavigate } from 'react-router'
 
 const TAP_CHAMPION_DESCRIPTION = 'PC music game'
 
 const VEGGIES_DESCRIPTION = "Mobile arcade game. Authors: Jan Kilar, Jakub Kurc, Adrian Sarna"
 
+
+
 function App() {
+  const navigate = useNavigate()
+  const links : { [key :string] :string } = {
+    "CV": "twoj link do cv",
+    "GITHUB": "twoj link do github",
+    "LINKEDIN": "twoj link do linkedin"
+  }
+
+
+  const OnLinkClick = (type :string) => {
+    const link = document.createElement('a');
+        link.href = links[type];
+        link.target = '_blank';
+        link.click();
+  }
+
+
+
   return (
     <div className="App">
       <div id="AppHeader">
-          <button className="cvButton vsButton">CV</button>
-          <button className="linkedInButton vsButton">LinkedIn</button>
-          <button className="githubButton vsButton">GitHub</button>
+          <button className="cvButton vsButton" onClick={()=> OnLinkClick('CV')}>CV</button>
+          <button className="linkedInButton vsButton" onClick={()=> OnLinkClick('GITHUB')}>LinkedIn</button>
+          <button className="githubButton vsButton" onClick={()=> OnLinkClick('LINKEDIN')}>GitHub</button>
       </div>
       <div className='logo'>
         <img src="/JKportfolio/fonts/logo.png" alt="Pac-Man"/>

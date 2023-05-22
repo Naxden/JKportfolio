@@ -5,9 +5,6 @@ interface ILinearDecorator {
     children?: React.ReactNode
 }
 
-
-
-
 export default function LineDecorator(properties: ILinearDecorator) {
     const [line, setLine] = useState("")
     const [resizeObserver, setResizeObserver] = useState<ResizeObserver | null>(null);
