@@ -1,6 +1,6 @@
 {
     "title":"Tap Champion",
-    "githubSource":"https://github.com/Naxden/TapChampion/tree/master",
+    "github-source":"https://github.com/Naxden/TapChampion/tree/master",
     "download-link": "",
     "introduction": "Tap Champion is my clone of “Guitar Hero” mixed with “Osu!” and “Genshin Impact”s event-mini game. The project is designed and coded entirely by myself. I want to focus on usability and the backend side of it. In the future I plan to work on the general appearance and aesthetics (UI, Animations, Shaders). Since Tap Champion is still in development, this post will also be changed. I have built whole Song System or actually - “.tapch” files, which are my way of storing and sharing songs. This kind of file stores information about.\nThe actual sound track. The only extension that my game supports is “.mp3”.\nThe background image of the song. The extensions are “.png” or “.jpg”.\nLastly NoteFile. Which has basic information about song and maps of actual notes divided into 3 difficulty levels.\nMy game has short and long notes, which are distinguished by the time the key is pressed.",
     "feature_number": 5,

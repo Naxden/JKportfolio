@@ -34,8 +34,8 @@ function App() {
     <div className="App">
       <div id="AppHeader">
           <button className="cvButton vsButton" onClick={()=> OnLinkClick('CV')}>CV</button>
-          <button className="linkedInButton vsButton" onClick={()=> OnLinkClick('GITHUB')}>LinkedIn</button>
-          <button className="githubButton vsButton" onClick={()=> OnLinkClick('LINKEDIN')}>GitHub</button>
+          <button className="linkedInButton vsButton" onClick={()=> OnLinkClick('LINKEDIN')}>LinkedIn</button>
+          <button className="githubButton vsButton" onClick={()=> OnLinkClick('GITHUB')}>GitHub</button>
       </div>
       <div className='logo'>
         <img src="/JKportfolio/fonts/logo.png" alt="Pac-Man"/>
