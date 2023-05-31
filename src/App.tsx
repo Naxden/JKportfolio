@@ -15,9 +15,9 @@ const VEGGIES_DESCRIPTION = "Mobile arcade game. Authors: Jan Kilar, Jakub Kurc,
 function App() {
   const navigate = useNavigate()
   const links : { [key :string] :string } = {
-    "CV": "twoj link do cv",
-    "GITHUB": "twoj link do github",
-    "LINKEDIN": "twoj link do linkedin"
+    "CV": "https://www.linkedin.com/in/jan-kilar-260398244/",
+    "GITHUB": "https://github.com/Naxden?tab=repositories",
+    "LINKEDIN": "https://www.linkedin.com/in/jan-kilar-260398244/"
   }
 
 
