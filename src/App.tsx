@@ -6,7 +6,7 @@ import CardOptions from './components/card/cardOptions'
 import GameFooter from './components/engine/GameFooter';
 import { useNavigate } from 'react-router'
 
-const TAP_CHAMPION_DESCRIPTION = 'PC music game'
+const TAP_CHAMPION_DESCRIPTION = 'PC rhythm game'
 
 const VEGGIES_DESCRIPTION = "Mobile arcade game. Authors: Jan Kilar, Jakub Kurc, Adrian Sarna"
 
@@ -60,7 +60,7 @@ function App() {
             description={TAP_CHAMPION_DESCRIPTION}
             UID='tap'
             linkSource='https://github.com/Naxden/TapChampion/tree/master'
-            linkToRun=''
+            linkToRun='https://naxden.itch.io/tapchampion'
           />
         </div>
         <div className='section'>
